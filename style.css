@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    padding: 15px;
+}
+
+.container {
+    min-height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading-h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    font-size: 2.5em;
+}
+.heading-bold {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.new-line::after {
+    content: '\A';
+    white-space: pre;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.col {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.col-1 {
+    justify-content: end;
+}
+
+.col-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-3 {
+    justify-content: start;
+}
+
+.card {
+    display: block;
+    max-width: 360px;
+    height: 230px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 6px 10px 3px #dce5ec;
+    position: relative;
+}
+
+.card-supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.card-team-builder {
+    margin-bottom: 30px;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.card-karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card-calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card-title {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9em;
+}
+
+.card-image {
+    position: absolute;
+    bottom: 21px;
+    right: 25px;
+    width: 58px;
+}
+
+.card-image img {
+    max-width: 100%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(234, 12%, 34%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px 20px;
+    }
+
+    .header {
+        max-width: 380px;
+        margin: 0 auto 40px;
+    }
+
+    .heading-h1 {
+        font-size: 2em;
+    }
+
+    .heading-bold {
+        font-size: 2em;
+    }
+
+    .heading-text {
+        padding: 0 15px;
+    }
+
+    .new-line::after {
+        content: '';
+        white-space: unset;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .col-1 {
+        justify-content: center;
+    }
+    
+    .col-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .col-3 {
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 340px;
+    }
+} 
+
+@media (max-width: 380px) {
+    .heading-h1 {
+        font-size: 1.5em;
+    }
+
+    .heading-bold {
+        font-size: 1.5em;
+    }
+}
